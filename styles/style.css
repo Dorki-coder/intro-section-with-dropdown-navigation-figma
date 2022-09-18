@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+@import url(./reset.css);
+
+body {
+  padding-top: 21px;
+  font-family: "Epilogue", sans-serif;
+  font-size: 14px;
+}
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 1360px;
+  margin: auto;
+}
+
+.header__menu {
+  margin-left: 63px;
+  display: flex;
+  gap: 40px;
+}
+
+.header__auth {
+  position: absolute;
+  right: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 35px;
+  color: #151515;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 80px;
+  color: #151515;
+}
+
+.first__page-description {
+  margin-top: 48px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #686868;
+}
+
+.first__page {
+  display: flex;
+  gap: 125px;
+}
+
+.container {
+  margin: auto;
+  margin-top: 80px;
+  max-width: 1145px;
+}
+
+.first__page {
+  position: relative;
+  display: flex;
+}
+
+.clients {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header__auth {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.register__btn {
+  /* text */
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #686868;
+  /* button */
+  border: 2px solid #686868;
+  background: none;
+  border-radius: 14px;
+  padding: 13px 22px;
+  cursor: pointer;
+}
+
+.register__btn:hover {
+  transition: 0.3s;
+  color: #151515;
+  border: 2px solid #151515;
+}
+
+.header__menu li:hover {
+  cursor: pointer;
+  color: #151515;
+}
+
+.learnmore__btn {
+  /* text */
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.25px;
+  color: #fafafa;
+  /* button */
+  margin-top: 51px;
+  background: #151515;
+  border-radius: 15px;
+  padding: 15px 29px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.learnmore__btn:hover {
+  background: #ffffff;
+  color: #151515;
+  border: 1px solid #151515;
+}
+
+.login__btn:hover {
+  cursor: pointer;
+  color: #151515;
+  transition: 0.3s;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.menu__features {
+  position: relative;
+  cursor: pointer;
+}
+
+.features__dropdown-content {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.149126);
+  border-radius: 10px;
+  padding: 24px;
+  top: 30px;
+  color: #686868;
+  gap: 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.company__dropdown-content {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.149126);
+  border-radius: 10px;
+  padding: 24px;
+  color: #686868;
+  gap: 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: 250px;
+  top: 30px;
+}
+
+li svg {
+  margin-right: 15px;
+}
+
+.features__dropdown-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.company__dropdown-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.Show {
+  display: block;
+}
+
+@media screen and (max-width: 900px) {
+  .first__page {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .first__page-description {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
